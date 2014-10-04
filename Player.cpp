@@ -33,10 +33,6 @@ void Player::update() {
                 x++;
             }
             break;
-        case KeyEsc:
-            tb_shutdown();
-            exit(0);
-            break;
         default:
             break;
     }

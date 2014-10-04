@@ -11,6 +11,12 @@ int main(int argc, char const *argv[])
 
     while (1) {
         g_input.update();
+
+        if (g_input.getKey() == KeyEsc) {
+            tb_shutdown();
+            return 0;
+        }
+
         player.update();
 
         tb_clear();
